@@ -408,8 +408,7 @@ if __name__ == '__main__':
         '''init agent and environment'''
         agent = args.agent
         env = args.env
-        agent.init(args.net_dim, env.state_space.shape[0], env.action_space.shape[0], args.learning_rate,
-                   args.if_per_or_gae)
+        agent.init(args.net_dim, env.state_space.shape[0], env.action_space.shape[0], args.learning_rate)
         '''init replay buffer'''
         buffer = ReplayBuffer(max_len=args.max_memo, state_dim=env.state_space.shape[0],
                               action_dim=env.action_space.shape[0])
@@ -425,7 +424,7 @@ if __name__ == '__main__':
         num_episode = args.num_episode
         args.train=True
         args.save_network=True
-        wandb.init(project='MIP_DQN_experiments',name=args.run_name,settings=wandb.Settings(start_method="fork"))
+        wandb.init(project='MIP_DQN_experiments',name=args.run_name,settings=wandb.Settings(start_method="thread"))
         wandb.config = {
             "epochs": num_episode,
             "batch_size": batch_size}
