@@ -89,7 +89,7 @@ class Arguments:
         self.learning_rate = 1e-4  # 2 ** -14 ~= 6e-5
         self.soft_update_tau = 1e-2  # 2 ** -8 ~= 5e-3
 
-        self.net_dim = 64  # the network width 256
+        self.net_dim = 128 #64  # the network width 256
         self.batch_size = 256  # num of transitions sampled from replay buffer.
         self.repeat_times = 2 ** 3  # repeatedly update network to keep critic's loss small
         self.target_step = 1000 # collect target_step experiences , then update network, 1024
@@ -236,7 +236,7 @@ class AgentBase:
 class AgentMIPDQN(AgentBase):
     def __init__(self):
         super().__init__()
-        self.explore_noise = 0.5  # standard deviation of exploration noise
+        self.explore_noise = 0.2#5  # standard deviation of exploration noise
         self.policy_noise = 0.2  # standard deviation of policy noise
         self.update_freq = 2  # delay update frequency
         self.if_use_cri_target = self.if_use_act_target = True

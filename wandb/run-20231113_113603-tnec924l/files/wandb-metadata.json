@@ -1,0 +1,45 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.11.6",
+    "heartbeatAt": "2023-11-13T19:36:04.967587",
+    "startedAt": "2023-11-13T19:36:03.993227",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:\\UCB\\Capstone\\RL-for-Cost-Savings-DRL\\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\\MIP_DQN.py",
+    "codePathLocal": "MIP_DQN.py",
+    "codePath": "MIP_DQN.py",
+    "git": {
+        "remote": "https://github.com/jgeng99/Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning.git",
+        "commit": "e8f29352044b9c4349d6598fc85318c622715c33"
+    },
+    "email": "Georgegeng00@hotmail.com",
+    "root": "D:/UCB/Capstone/RL-for-Cost-Savings-DRL/Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning",
+    "host": "DESKTOP-35N51H8",
+    "username": "Georg",
+    "executable": "C:\\Users\\Georg\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3501.0,
+        "min": 0.0,
+        "max": 3501.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3501.0,
+            "min": 0.0,
+            "max": 3501.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 299.99999618530273,
+            "used": 38.58733367919922
+        }
+    },
+    "memory": {
+        "total": 15.927825927734375
+    }
+}
