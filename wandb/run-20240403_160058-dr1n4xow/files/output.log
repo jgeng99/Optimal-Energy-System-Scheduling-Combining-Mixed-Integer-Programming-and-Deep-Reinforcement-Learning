@@ -1,0 +1,21 @@
+buffer:0
+torch.Size([1, 4]) torch.Size([1, 128])
+D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py:202: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ..\torch\csrc\utils\tensor_new.cpp:248.)
+  states = torch.as_tensor((state,), dtype=torch.float32, device=self.device)
+Traceback (most recent call last):
+  File "D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py", line 454, in <module>
+    trajectory = agent.explore_env(env, target_step)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py", line 213, in explore_env
+    action = self.select_action(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py", line 203, in select_action
+    action = self.act(states)[0]
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Georg\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py", line 149, in forward
+    x = x[:, -1, :]
+        ~^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2

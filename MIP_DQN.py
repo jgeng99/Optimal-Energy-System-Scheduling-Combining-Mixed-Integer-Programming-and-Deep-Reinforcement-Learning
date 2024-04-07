@@ -132,10 +132,24 @@ class Actor(nn.Module):
                                nn.Linear(mid_dim,mid_dim),nn.ReLU(),
                                nn.Linear(mid_dim,mid_dim),nn.ReLU(),
                                nn.Linear(mid_dim,action_dim))
+        
+        # change layer to be lstm cells
+        self.lstm1 = nn.LSTM(input_size=state_dim, hidden_size=mid_dim, batch_first=True)
+        self.lstm2 = nn.LSTM(input_size=mid_dim, hidden_size=mid_dim, batch_first=True)
+        self.lstm3 = nn.LSTM(input_size=mid_dim, hidden_size=mid_dim, batch_first=True)
+        self.output = nn.Linear(mid_dim, action_dim)
+
     def forward(self,state):
-        return self.net(state).tanh()# make the data from -1 to 1
+        # return self.net(state).tanh()# make the data from -1 to 1
+        x, _ = self.lstm1(state)
+        x, _ = self.lstm2(x)
+        x, _ = self.lstm3(x)
+
+        return self.output(x).tanh()
+            
     def get_action(self,state,action_std):#
-        action=self.net(state).tanh()
+        # action=self.net(state).tanh()
+        action=self.forward(state)
         noise=(torch.randn_like(action)*action_std).clamp(-0.5,0.5)#
         return (action+noise).clamp(-1.0,1.0)
 class CriticQ(nn.Module):

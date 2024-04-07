@@ -1,0 +1,1 @@
+{"critic loss": 0.39801859855651855, "custom_step": 2999, "_timestamp": 1712285815.8184547, "_runtime": 100195.06559371948, "_step": 14999, "actor loss": 2.5599048137664795, "mean_episode_reward": -8.208751045566482, "unbalance": 333.888490188927, "episode_operation_cost": 16417.502091132963, "_wandb": {"runtime": 100194}}

@@ -1,0 +1,183 @@
+buffer:0
+buffer:1000
+buffer:2000
+D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py:201: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ..\torch\csrc\utils\tensor_new.cpp:248.)
+  states = torch.as_tensor((state,), dtype=torch.float32, device=self.device)
+buffer:3000
+buffer:4000
+buffer:5000
+buffer:6000
+buffer:7000
+buffer:8000
+buffer:9000
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+Traceback (most recent call last):
+  File "D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py", line 460, in <module>
+    critic_loss, actor_loss = agent.update_net(buffer, batch_size, repeat_times, soft_update_tau)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py", line 271, in update_net
+    self.optim_update(self.act_optim, obj_actor)
+  File "D:\UCB\capstone\RL-for-Cost-Savings-DRL\Optimal-Energy-System-Scheduling-Combining-Mixed-Integer-Programming-and-Deep-Reinforcement-Learning\MIP_DQN.py", line 224, in optim_update
+    objective.backward()
+  File "C:\Users\Georg\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "C:\Users\Georg\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\autograd\__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
+-------------------------------
+torch.Size([256, 4])
